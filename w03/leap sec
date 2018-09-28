@@ -1,0 +1,33 @@
+int main()
+
+{
+	int sec;
+	int hh,mm,ss;
+	printf("Enter seconds: ");
+	scanf("%d",&sec);
+	
+	while(sec>=0)
+   {
+   	printf("1\n");
+	 hh = sec/3600;
+	 mm = sec%3600/60;
+	 ss = sec%60;
+	 printf("%dsec=%02d:%02d:%02d\n:", sec, hh, mm, ss);
+	 
+	 printf("Enter seconds: ");
+	 scanf("%d",&sec);
+   }
+	
+}
+
+/********
+Enter seconds: 20000
+20000 seconds = 05:33:20
+Enter seconds: 10000
+10000 seconds = 02:46:40
+Enter seconds: 30000
+30000 seconds = 08:20:00
+Enter seconds: 100000
+100000 seconds = 27:46:40
+Enter seconds: -1
+********/
