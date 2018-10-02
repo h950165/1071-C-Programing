@@ -1,7 +1,8 @@
 #include<stdio.h>
 
 int main()
-{   int choice;
+{
+    int choice;
     int length;
     int width;
     int type;
@@ -16,23 +17,26 @@ int main()
         if(choice==3)break;
         switch(choice)
         {
-        case 1:
-            printf("Enter length and width :");
-            scanf("%d %d",&length,&width );
-            for(int i=1;i<=length;i++)
-            {
-                for(int j=1;j<=width;j++)
-                {
-                  if(i==1 || i==length|| j==1||j==width)
-                      printf("*");
-                  else
-                      printf(" ");
-                }
-			    printf("\n");
-            }
-
-
-         break;
+         case 1:
+             printf("Enter length and width :");
+             scanf("%d %d",&length,&width );
+             for(int i=1;i<=length;i++)
+             {
+                 for(int j=1;j<=width;j++)
+                 {
+                   if(i==1 || i==length|| j==1||j==width)
+                       printf("*");
+                   else
+                       printf(" ");
+                 }
+			     printf("\n");
+              }
+           break;
+         case 2:
+             printf("Eenter length and type: ");
+             snanf("%d %D" ,& lenght and type );
+             switch(type)
+             
          }
 
 
