@@ -34,12 +34,30 @@ int main()
            break;
          case 2:
              printf("Eenter length and type: ");
-             snanf("%d %D" ,& lenght and type );
+             scanf("%d %d", &length,&type );
              switch(type)
-             
+             {
+              case 1:
+
+               break;
+
+              case 2:
+
+               break;
+
+              case 3:
+
+               break;
+
+              case 4:
+
+               break;
+             }
+
+
          }
 
-
+       break;
 
 	}
 }
