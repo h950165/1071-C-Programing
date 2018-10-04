@@ -38,6 +38,16 @@ int main()
              switch(type)
              {
               case 1:
+               for(int i=1;i<=length;i++){
+               	printf("*");
+               	for(int j=2;j<=i;j++)
+				   {
+				    printf("*");
+				   }  
+				   printf("\n");
+               	 
+			   }
+			   
 
                break;
 
