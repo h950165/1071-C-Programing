@@ -3,7 +3,7 @@
 int main()
 {
     int choice;
-    int length;
+    int lenght;
     int width;
     int i;
     int j;
@@ -21,13 +21,13 @@ int main()
         switch(choice)
         {
          case 1:
-             printf("Enter length and width :");
-             scanf("%d %d",&length,&width );
+             printf("Enter lenght and width :");
+             scanf("%d %d",&lenght,&width );
              for(int i=1;i<=length;i++)
              {
                  for(int j=1;j<=width;j++)
                  {
-                   if(i==1 || i==length|| j==1||j==width)
+                   if(i==1 || i==lenght|| j==1||j==width)
                        printf("*");
                    else
                        printf(" ");
@@ -36,16 +36,16 @@ int main()
               }
            break;
          case 2:
-             printf("Eenter length and type: ");
-             scanf("%d %d", &length,&type );
+             printf("Eenter lenght and type: ");
+             scanf("%d %d", &lenght,&type );
              switch(type)
              {
               case 1:
-               for(int i=1;i<=length;i++)
+               for(int i=1;i<=lenght;i++)
                {
-               	for(j=1;j<=length;j++)
+               	for(j=1;j<=lenght;j++)
 				   {
-				    if(i==j || i==length ||j==1)
+				    if(i==j || i==lenght ||j==1)
 				    printf("*");
 				    else
 				    printf(" ");
@@ -57,11 +57,11 @@ int main()
                break;
 
               case 2:
-               for(int i=1;i<=length;i++)	
+               for(int i=1;i<=lenght;i++)	
                {
-               	for(j=1;j<=length;j++)
+               	for(j=1;j<=lenght;j++)
 				   {
-				   	if(i+j==6 ||i==length||j==length)
+				   	if(i+j==6 ||i==lenght||j==length)
 				   	printf("*");
 				   	else
 				    printf(" ");
@@ -72,9 +72,9 @@ int main()
                break;
 
               case 3:
-              	for(i=1;i<=length;i++)	
+              	for(i=1;i<=lenght;i++)	
                  {
-               	   for(j=1;j<=length;j++)
+               	   for(j=1;j<=lenght;j++)
 				    {
 				   	 if(i+j==6 ||j==1||i==1)
 				   	 printf("*");
@@ -86,11 +86,11 @@ int main()
                break;
 
               case 4:
-              	for(i=1;i<=length;i++)	
+              	for(i=1;i<=lenght;i++)	
                  {
-               	   for(j=1;j<=length;j++)
+               	   for(j=1;j<=lenght;j++)
 				    {
-				   	 if(i==j ||i==1||j==length)
+				   	 if(i==j ||i==1||j==lenght)
 				   	 printf("*");
 				   	 else
 				     printf(" ");
