@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+
+int main()
+{
+  int i;
+  int j;
+  int a=0;
+  int b=0;
+  int x=rand();
+
+  srand(time(NULL));
+
+
+
+
+  for( i=1;i<=10;i++)
+  {
+      printf(" %2d",rand()%2);
+
+      if(rand()%2==0)
+      {a++ ;}
+      else
+      {b++ ;}
+
+      for( j=1;j<=9;j++)
+      {
+       printf(" %2d",x%2);
+
+      if(x==0)
+      {a++ ;}
+      else
+      {b++ ;}
+
+
+      }
+      printf("\n");
+
+  }
+   printf("Number(0) = %2d",a);
+   printf("\n");
+   printf("Number(1) = %2d",b);
+   printf("\n");
+   printf("Prob(0) = 0.%2d",a);
+   printf("\n");
+   printf("Prob(1) = 0.%2d",b);
+   printf("\n");
+
+
+
+   printf("\n");
+   printf("Coding by 1B-407411312");
+   printf("\n");
+}
