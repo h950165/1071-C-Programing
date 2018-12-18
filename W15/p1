@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+
+
+
+
+int main()
+{
+  int i;
+  int j;
+  printf("   ");
+
+  for(i=1;i<=9;i++)
+  {
+   printf("  %2d",i);
+  }
+  printf("\n");
+  printf("   |-----------------------------------");
+  printf("\n");
+
+  for( i=1;i<=9;i++)
+  {
+      printf(" %2d",i);
+      printf("|");
+      for( j=1;j<=9;j++)
+      {
+       printf(" %2d ",i*j);
+      }
+      printf("\n");
+
+  }
+   printf("\n");
+   printf("Coding by 1B-407411312");
+   printf("\n");
+}
