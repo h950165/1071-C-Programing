@@ -1,0 +1,91 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+struct Date
+{
+    int year;
+    int month;
+    int day;
+};
+
+/* self-referential structure */
+struct listNode {
+
+    struct Date date;   // opening date
+    int num[6];         // winning numbers
+    struct listNode *nextPtr; /* pointer to next node*/
+}; /* end structure listNode */
+
+typedef struct listNode ListNode; /* synonym for struct listNode */
+typedef ListNode *ListNodePtr; /* synonym for ListNode* */
+
+typedef struct listNode Lotto;
+
+/* prototypes */
+void insert( ListNodePtr *sPtr);
+int del( ListNodePtr *sPtr, int id );
+int isEmpty( ListNodePtr sPtr );
+void printList( ListNodePtr currentPtr );
+void listOne(ListNodePtr currentPtr);
+void instructions( void );
+
+int main(){
+   Lotto *startPtr = NULL;
+
+   srand(time(NULL));
+   int n;
+   int temp;
+   printf("Enter N: ");
+   scanf("%d", &n);
+   printf("\n");
+
+   for(int i=0;i<n;i++){
+     insert( &startPtr);
+     printf("\n");
+   }
+}
+
+int duplicate(int num[], int pos)
+{
+    int i;
+    for(i=0;i<pos;i++)
+    {
+        if(num[i]==num[pos])
+          return 1;
+    }
+    return 0;
+}
+
+void insert( ListNodePtr *sPtr )
+{
+   int i;
+   int temp;
+   ListNodePtr newPtr; /* pointer to new node */
+   ListNodePtr previousPtr; /* pointer to previous node in list */
+   ListNodePtr currentPtr; /* pointer to current node in list */
+
+   newPtr = (ListNodePtr)malloc( sizeof( ListNode ) ); /* create node */
+
+   if ( newPtr != NULL ) { /* is space available */
+        newPtr->date.year = rand()%11+2010;
+     newPtr->date.month = rand()%12+1;
+     newPtr->date.day = rand()%31+1;
+     printf("%d/%02d/%02d   ", newPtr->date.year, newPtr->date.month, newPtr->date.day );
+     for(int j=0;j<6;j++){
+        do{
+           temp = rand()%49+1;
+        }while(duplicate(newPtr->num,j));
+
+        newPtr->num[j] = temp;
+        printf("%02d ", newPtr->num[j]);
+
+
+
+
+
+      /* loop to find the correct location in the list */
+
+} /* end function insert */
+}
+}
